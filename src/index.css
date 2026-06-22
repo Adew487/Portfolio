@@ -297,8 +297,106 @@ body::-webkit-scrollbar-thumb {
   box-shadow: none !important;
 }
 
-/*************************About Me **********************/
 
+.resume-section {
+  padding-bottom: 50px;
+}
+
+.resume-subtitle {
+  color: #6b7280;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.resume-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #20242b;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.resume-title::after {
+  content: "";
+  display: block;
+  width: 42px;
+  height: 2px;
+  background: #ecbf4f;
+  margin-top: 12px;
+}
+
+.resume-list {
+  margin-top: 28px;
+}
+
+.resume-item {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 24px;
+}
+
+.resume-date {
+  color: #4b5563;
+  font-size: 15px;
+  font-weight: 500;
+  padding-top: 4px;
+}
+
+.resume-content {
+  border-left: 1px solid #d7d7d7;
+  padding-left: 24px;
+}
+
+.resume-content h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #20242b;
+  margin-bottom: 6px;
+}
+
+.resume-content h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #20242b;
+  margin-bottom: 14px;
+}
+
+.resume-content ul {
+  padding-left: 18px;
+  margin-bottom: 0;
+}
+
+.resume-content li {
+  color: #6b7280;
+  font-size: 15.5px;
+  line-height: 1.8;
+  margin-bottom: 5px;
+}
+
+.resume-list hr {
+  margin: 32px 0;
+  border-color: #d7d7d7;
+}
+
+@media (max-width: 768px) {
+  .resume-item {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .resume-content {
+    padding-left: 18px;
+  }
+
+  .resume-title {
+    font-size: 26px;
+  }
+}
+
+/*************************About Me **********************/
+.Skills{
+    background-color: #fff;
+}
 .about-me {
   background-color: #fff;
 }
@@ -586,13 +684,56 @@ body::-webkit-scrollbar-thumb {
 
 
 /************************* Summary **********************/
+.container-like {
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
 
+@media (min-width: 576px) {
+  .container-like {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-like {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-like {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-like {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container-like {
+    max-width: 1320px;
+  }
+}
 
 #summary {
   overflow: hidden;
   padding: 6.5rem 0;
   position: relative;
   background: #f8f9fa;
+}
+
+#skills{
+  overflow: hidden;
+  padding: 6.5rem 0;
+  position: relative;
+  background: #fff;
 }
 
 .re-data h2 {
@@ -894,9 +1035,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-.skills-section {
+/* .skills-section {
   padding: 70px 0;
-}
+} */
 
 .skills-header {
   text-align: center;
@@ -1064,6 +1205,7 @@ body::-webkit-scrollbar-thumb {
   overflow: hidden;
   padding: 6.5rem 0;
   position: relative;
+  background-color: #f8f9fa;;
 }
 
 .port {

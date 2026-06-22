@@ -7,11 +7,11 @@ import { useLocation } from 'react-router-dom';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 
 const Header = ({ scrollToAboutSection, scrollToResumeSection, scrollToHomeSection, scrollToProjectSection }) => {
-    const navigate = useNavigate();
+ 
     const location = useLocation();
     const [isScrolled, setIsScrolled] = useState(false);
     const [activeTab, setActiveTab] = useState("/");
-    const [inspectAttempts, setInspectAttempts] = useState(0);
+   
 
     // useEffect(() => {
     //     const handleContextMenu = e => {
